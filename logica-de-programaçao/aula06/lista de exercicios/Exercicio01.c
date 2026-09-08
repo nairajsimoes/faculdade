@@ -3,11 +3,14 @@ ser feita. Desenvolva um programa em C para resolver esse problema. */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 
 int main(void){
+	
+	setlocale(LC_ALL, "Portuguese");
 	int idade;
 	
-	printf("Qual sua idade? ");
+	printf("Qual é sua idade? ");
 	scanf("%i", &idade);
 	
 	if(idade>=18) {
