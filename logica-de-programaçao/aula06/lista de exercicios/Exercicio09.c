@@ -10,7 +10,7 @@ int main(void){
 
 // quais sao as variaveis?
     float N1, N2, resultado;
-    char simbolo_operacao;
+    char simbolo;
 
     // quais sao as entradas de dados?
     printf("Digite o primeiro numero: ");
@@ -20,23 +20,23 @@ int main(void){
     scanf("%f", &N2);
 
     printf("Digite o simbolo da operacao matematica: ");
-    scanf(" %c", &simbolo_operacao); 
+    scanf(" %c", &simbolo); 
 
     // quais sao os processamentos e saida de dados?
     
-    if (simbolo_operacao == '+') {
+    if (simbolo == '+') {
         resultado = N1 + N2;
         printf("Resultado: %.2f", resultado);
     } 
-    else if (simbolo_operacao == '-') {
+    else if (simbolo == '-') {
         resultado = N1 - N2;
         printf("Resultado: %.2f", resultado);
     } 
-    else if (simbolo_operacao == '*') {
+    else if (simbolo == '*') {
         resultado = N1 * N2;
         printf("Resultado: %.2f", resultado);
     } 
-    else if (simbolo_operacao == '/') {
+    else if (simbolo == '/') {
         resultado = N1 / N2;
         printf("Resultado: %.2f", resultado);
     } 
